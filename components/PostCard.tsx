@@ -4,7 +4,7 @@ import {Text, Card} from 'react-native-paper';
 
 export function PostCard(props: {data: PostData; onClick: () => void}) {
   return (
-    <Card onPress={() => props.onClick()} style={{margin: 10}}>
+    <Card onPress={props.onClick} style={{margin: 10}}>
       <Card.Title
         title={props.data.title}
         titleVariant="titleMedium"
